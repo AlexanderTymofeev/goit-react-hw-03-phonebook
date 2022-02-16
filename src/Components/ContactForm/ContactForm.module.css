@@ -23,11 +23,13 @@
   padding: 5px 10px;
   border: 2px solid yellow;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .addBtn:hover {
   background-color: rgb(43, 247, 16);
   color: white;
+  transform: scale(1.1);
 }
 
 .name {

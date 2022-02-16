@@ -22,6 +22,11 @@ const ContactList = ({ contacts, onRemoveContact }) => (
   </ul>
 );
 
+ContactList.defaultProps = {
+    contacts: []
+}
+
+
 ContactList.propTypes = {
   onRemoveContact: PropTypes.func.isRequired,
   contacts: PropTypes.arrayOf(PropTypes.shape({
