@@ -31,6 +31,7 @@ export default class ContactForm extends Component {
             className={styles.name_input}
             type="text"
             name="name"
+            autoComplete="off"
             value={this.state.name}
             onChange={this.handleChange}
           />
@@ -41,6 +42,7 @@ export default class ContactForm extends Component {
             className={styles.name_input}
             type="text"
             name="number"
+            autoComplete="off"
             value={this.state.number}
             onChange={this.handleChange}
           />
@@ -55,8 +57,4 @@ export default class ContactForm extends Component {
 
 ContactForm.propTypes = {
   onAddContact: PropTypes.func.isRequired,
-  value: PropTypes.oneOfType([
-    PropTypes.string.isRequired,
-    PropTypes.number.isRequired,
-    ]),
 };
